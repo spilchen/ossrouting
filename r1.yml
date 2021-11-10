@@ -2,7 +2,7 @@
 - name: Prepare R1
   hosts: all
   user: vagrant
-  sudo: yes
+  become: yes
   gather_facts: yes
   roles:
-    - quagga
+    - bird1
